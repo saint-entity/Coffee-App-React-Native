@@ -14,8 +14,9 @@ export default function CoffeeCard({item}) {
         style={{
           borderRadius: 40, 
           backgroundColor: themeColors.bgDark, 
-          height: ios? height*0.4 : height*0.50, 
-          width: width*0.65,
+          height: ios? height*0.2 : height*0.4, 
+          width: width*0.5,
+          marginBottom: ios? -(height*0.08): 15,
         }} 
         >
         <View 
@@ -24,7 +25,7 @@ export default function CoffeeCard({item}) {
           shadowRadius: 30,
           shadowOffset: {width: 0, height: 40},
           shadowOpacity: 0.8,
-          marginTop: ios? -(height*0.08): 15,
+          marginTop: ios? -(height*0.08): 5,
         }}
         className="flex-row justify-center">
           <Image 
@@ -67,7 +68,10 @@ export default function CoffeeCard({item}) {
                 shadowOffset: {width: -20, height: -10},
                 shadowOpacity: 1,
               }} className="p-4 bg-white rounded-full">
-                <PlusIcon size="25" strokeWidth={2} color={themeColors.bgDark} />
+                <PlusIcon style={{
+                 size: 25,
+                 strokeWidth:2,
+                 color: themeColors.bgDark,}} />
               </TouchableOpacity>
             </View>
             

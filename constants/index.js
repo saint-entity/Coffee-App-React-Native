@@ -49,7 +49,7 @@ export const coffeeItems = [
   {
     id: 3,
     name: 'Espresso',
-    price: '30.00',
+    price: '3.00',
     volume: '100 ml',
     stars: '4.0',
     image: require('../assets/images/coffee3.png'),

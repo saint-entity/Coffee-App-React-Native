@@ -13,7 +13,7 @@ import { AlignJustify } from 'react-native-feather';
 
 const {width, height} = Dimensions.get('window');
 const ios = Platform.OS == 'ios';
-export default function HomeScreen() {
+export default function TBDScreen() {
   const [activeCategory, setActiveCategory] = useState(1);
 
   return (
@@ -47,10 +47,8 @@ export default function HomeScreen() {
           flexDirection:'row',
           justifyContent:'space-around'
         }}>
-          <TouchableOpacity>
-            <LandLordCard/>
-          </TouchableOpacity>
-        
+          
+          
         </View>
         
       </View>
